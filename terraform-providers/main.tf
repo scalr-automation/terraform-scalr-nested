@@ -7,8 +7,8 @@ terraform {
   }
 }
 
-resource "null_resource" "resource3" {
-  provisioner "local-exec" {
+resource "null_resource" "resource" {
+  provisioner "local-exec-2" {
     command = "echo $ENV"
     environment = {
       ENV = "Hello World2!"
